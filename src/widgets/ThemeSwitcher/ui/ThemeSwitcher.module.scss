@@ -1,0 +1,13 @@
+.ThemeSwitcher {
+  display: block;
+  line-height: 0;
+  background: none;
+  border: none;
+  outline: none;
+  padding: 0;
+  bottom: 0;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
