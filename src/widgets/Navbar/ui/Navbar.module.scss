@@ -5,4 +5,8 @@
   height: 100px;
   padding: 25px 50px;
   background-color: var(--navbar-bg);
+
+  & > .Links>:not(:last-child) {
+    margin-right: 15px;
+  }
 }
