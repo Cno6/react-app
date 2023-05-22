@@ -5,6 +5,7 @@ import cls from "./Sidebar.module.scss"
 import { ThemeSwitcher } from "widgets/ThemeSwitcher"
 
 import { classNames } from "shared/lib/classNames"
+import { LanguageSwitcher } from "widgets/LanguageSwitcher"
 
 interface SidebarProps {
   className?: string
@@ -24,7 +25,10 @@ export const Sidebar = (props: SidebarProps) => {
         {collapsed ? '>>' : '<<'}
       </button>
 
-      <ThemeSwitcher />
+      <div className={cls.switchers}>
+        <ThemeSwitcher />
+        <LanguageSwitcher />
+      </div>
     </div>
   )
 }

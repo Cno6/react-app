@@ -7,17 +7,20 @@ import { Navbar } from "widgets/Navbar";
 import { Sidebar } from 'widgets/Sidebar';
 
 import { classNames } from 'shared/lib/classNames';
+import { Suspense } from 'react';
 
 const App = () => {
   const { theme } = useTheme()
 
   return (
     <div className={classNames('app', {}, [theme])}>
-      <Navbar />
-      <div className="wrapper">
-        <Sidebar />
-        <AppRouter />
-      </div>
+      <Suspense fallback="">
+        <Navbar />
+        <div className="wrapper">
+          <Sidebar />
+          <AppRouter />
+        </div>
+      </Suspense>
     </div>
   )
 }
