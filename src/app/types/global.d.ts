@@ -15,3 +15,5 @@ declare module "*.png" {
   const value: any;
   export = value;
 }
+
+declare var __IS_DEV__: boolean;
