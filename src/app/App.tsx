@@ -1,16 +1,15 @@
-import './styles/index.scss'
+import './styles/index.scss';
 
-import { AppRouter } from "./providers/router";
-import { useTheme } from './providers/ThemeProvider';
-
-import { Navbar } from "widgets/Navbar";
+import { Navbar } from 'widgets/Navbar';
 import { Sidebar } from 'widgets/Sidebar';
 
 import { classNames } from 'shared/lib/classNames';
 import { Suspense } from 'react';
+import { useTheme } from './providers/ThemeProvider';
+import { AppRouter } from './providers/router';
 
-const App = () => {
-  const { theme } = useTheme()
+function App() {
+  const { theme } = useTheme();
 
   return (
     <div className={classNames('app', {}, [theme])}>
@@ -22,7 +21,7 @@ const App = () => {
         </div>
       </Suspense>
     </div>
-  )
+  );
 }
 
 export default App;

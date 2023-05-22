@@ -17,11 +17,11 @@ i18n
     },
 
     backend: {
-      loadPath: '/locales/{{lng}}/{{ns}}.json'
+      loadPath: '/locales/{{lng}}/{{ns}}.json',
     },
 
     defaultNS: 'global',
-    ns: ['global']
+    ns: ['global'],
   });
 
 export default i18n;
