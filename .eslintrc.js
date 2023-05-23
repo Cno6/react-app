@@ -8,6 +8,7 @@ module.exports = {
     'airbnb/hooks',
     'plugin:react/recommended',
     'plugin:@typescript-eslint/recommended',
+    'plugin:i18next/recommended',
   ],
   overrides: [
   ],
@@ -18,6 +19,7 @@ module.exports = {
   plugins: [
     'react',
     '@typescript-eslint',
+    'i18next',
   ],
   parser: '@typescript-eslint/parser',
   rules: {
@@ -32,6 +34,9 @@ module.exports = {
     'no-shadow': 'off',
     'no-underscore-dangle': 'off',
     'react/jsx-props-no-spreading': 'warn',
+    'i18next/no-literal-string': ['error', { markupOnly: true, ignoreAttribute: ['to'] }],
+    'react/jsx-curly-brace-presence': ['warn', { props: 'always', children: 'always' }],
+    'max-len': ['warn', 120],
   },
   globals: {
     __IS_DEV__: true,
