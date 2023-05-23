@@ -5,5 +5,11 @@
   "editor.codeActionsOnSave": {
     "source.fixAll": true
   },
-  "eslint.validate": ["javascript", "typescript", "typescriptreact", "javascriptreact"]
+  "eslint.validate": [
+    "javascript",
+    "typescript",
+    "typescriptreact",
+    "javascriptreact"
+  ],
+  "stylelint.validate": ["css", "scss"]
 }
