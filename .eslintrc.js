@@ -36,7 +36,7 @@ module.exports = {
     'react/jsx-props-no-spreading': 'warn',
     'i18next/no-literal-string': ['error', { markupOnly: true, ignoreAttribute: ['to'] }],
     'react/jsx-curly-brace-presence': ['warn', { props: 'always', children: 'always' }],
-    'max-len': ['warn', 120],
+    'max-len': ['warn', 120, { ignoreComments: true }],
   },
   globals: {
     __IS_DEV__: true,
