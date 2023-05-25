@@ -6,5 +6,7 @@
     }
   },
   "main-page": "Main page",
-  "loading": "Loading"
+  "loading": "Loading",
+  "error-message": "Error",
+  "Обновить страницу": "Reload the page"
 }
