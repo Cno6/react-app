@@ -3,6 +3,8 @@
  * https://jestjs.io/docs/configuration
  */
 
+import path from 'path';
+
 export default {
   clearMocks: true,
   coveragePathIgnorePatterns: [
@@ -27,6 +29,11 @@ export default {
   modulePaths: [
     '<rootDir>src',
   ],
+  setupFilesAfterEnv: ['<rootDir>/config/jest/jest-setup.ts'],
+  moduleNameMapper: {
+    '\\.s?css$': 'identity-obj-proxy',
+    '\\.svg': path.resolve(__dirname, 'jestEmptyComponent.tsx'),
+  },
 
   // A list of paths to directories that Jest should use to search for files in
   // roots: [
