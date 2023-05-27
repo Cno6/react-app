@@ -25,6 +25,7 @@ module.exports = {
   rules: {
     'import/no-unresolved': 'off',
     'import/extensions': 'off',
+    'react/jsx-max-props-per-line': ['error', { when: 'multiline' }],
     'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx', '.ts', '.tsx'] }],
     'react/react-in-jsx-scope': 'off',
     'import/no-extraneous-dependencies': 'warn',
