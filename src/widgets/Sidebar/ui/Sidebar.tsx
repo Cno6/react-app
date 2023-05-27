@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 import { ThemeSwitcher } from 'widgets/ThemeSwitcher';
 
-import { classNames } from 'shared/lib/classNames';
+import { classNames } from 'shared/lib/classNames/classNames';
 import { LanguageSwitcher } from 'widgets/LanguageSwitcher';
 import { AppButton, ThemeAppButton } from 'shared/ui/AppButton';
 import cls from './Sidebar.module.scss';

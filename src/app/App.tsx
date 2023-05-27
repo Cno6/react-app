@@ -3,7 +3,7 @@ import './styles/index.scss';
 import { Navbar } from 'widgets/Navbar';
 import { Sidebar } from 'widgets/Sidebar';
 
-import { classNames } from 'shared/lib/classNames';
+import { classNames } from 'shared/lib/classNames/classNames';
 import { Suspense } from 'react';
 import { useTheme } from './providers/ThemeProvider';
 import { AppRouter } from './providers/router';
