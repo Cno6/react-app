@@ -16,8 +16,8 @@ export const Navbar = (props: NavbarProps) => {
   return (
     <div className={classNames(cls.Navbar, {}, [className])}>
       <div className={classNames(cls.Links, {}, [className])}>
-        <AppLink to={'/'}>{t('header.links.main-page')}</AppLink>
-        <AppLink to={'/about'}>{t('header.links.about-page')}</AppLink>
+        <AppLink to="/">{t('header.links.main-page')}</AppLink>
+        <AppLink to="/about">{t('header.links.about-page')}</AppLink>
       </div>
     </div>
   );

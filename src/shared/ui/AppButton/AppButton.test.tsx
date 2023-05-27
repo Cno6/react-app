@@ -5,12 +5,12 @@ import { AppButton, ThemeAppButton } from './AppButton';
 
 describe('AppButton', () => {
   it('is render', () => {
-    render(<AppButton>{'TEST'}</AppButton>);
+    render(<AppButton>TEST</AppButton>);
     expect(screen.getByText('TEST')).toBeInTheDocument();
   });
 
   it('is have "text" theme', () => {
-    render(<AppButton theme={ThemeAppButton.TEXT}>{'TEST'}</AppButton>);
+    render(<AppButton theme={ThemeAppButton.TEXT}>Test</AppButton>);
     expect(screen.getByText('TEST')).toHaveClass('text');
   });
 });

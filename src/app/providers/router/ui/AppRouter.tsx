@@ -5,7 +5,7 @@ import { routeConfig } from 'shared/config/router';
 import { AppLoader } from 'shared/ui/AppLoader/AppLoader';
 
 const AppRouter = () => (
-  <div className={'content'}>
+  <div className="content">
     <Suspense fallback={<AppLoader />}>
       <Routes>
         {routeConfig.map(({ path, element }) => <Route key={path} path={path} element={element} />)}

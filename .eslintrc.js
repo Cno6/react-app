@@ -10,8 +10,6 @@ module.exports = {
     'plugin:@typescript-eslint/recommended',
     'plugin:i18next/recommended',
   ],
-  overrides: [
-  ],
   parserOptions: {
     ecmaVersion: 'latest',
     sourceType: 'module',
@@ -35,11 +33,19 @@ module.exports = {
     'no-shadow': 'off',
     'no-underscore-dangle': 'off',
     'react/jsx-props-no-spreading': 'warn',
-    'i18next/no-literal-string': ['error', { markupOnly: true, ignoreAttribute: ['to'] }],
-    'react/jsx-curly-brace-presence': ['warn', { props: 'always', children: 'always' }],
+    'i18next/no-literal-string': ['error', { markupOnly: true, ignoreAttribute: ['to', 'data-testid'] }],
+    'react/jsx-curly-brace-presence': ['warn', { props: 'never', children: 'never' }],
     'max-len': ['warn', 120, { ignoreComments: true }],
   },
   globals: {
     __IS_DEV__: true,
   },
+  overrides: [
+    {
+      files: ['**/src/**/*.test.{ts,tsx}'],
+      rules: {
+        'i18next/no-literal-string': 'off',
+      },
+    },
+  ],
 };

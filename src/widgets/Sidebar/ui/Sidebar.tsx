@@ -18,12 +18,12 @@ export const Sidebar = (props: SidebarProps) => {
 
   return (
     <div
-      data-testid={'sidebar'}
+      data-testid="sidebar"
       className={classNames(cls.Sidebar, { [cls.collapsed]: collapsed }, [className])}
     >
       <AppButton
-        data-testid={'sidebar-toggle'}
-        type={'button'}
+        data-testid="sidebar-toggle"
+        type="button"
         theme={ThemeAppButton.OUTLINED}
         onClick={() => setCollapsed((prev) => !prev)}
         className={classNames(cls.toggle)}
