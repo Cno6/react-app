@@ -1,0 +1,27 @@
+.AppButton {
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  padding: 8px 12px;
+  border-radius: 12px;
+}
+
+.filled {
+  background-color: var(--primary-color);
+  background-color: var(--bg-color);
+}
+
+.outlined {
+  background: none;
+}
+
+.text {
+  padding: 0;
+  border: none;
+  background: none;
+  outline: none;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

@@ -1,5 +1,6 @@
 import { classNames } from 'shared/lib/classNames';
 import { useTranslation } from 'react-i18next';
+import { AppButton } from 'shared/ui/AppButton';
 import cls from './PageError.module.scss';
 
 interface PageErrorProps {
@@ -17,7 +18,7 @@ export const PageError = (props: PageErrorProps) => {
   return (
     <div className={classNames(cls.PageError, {}, [className])}>
       {t('error')}
-      <button type={'button'} onClick={reloadPage}>{t('Обновить страницу')}</button>
+      <AppButton type={'button'} onClick={reloadPage}>{t('Обновить страницу')}</AppButton>
     </div>
   );
 };

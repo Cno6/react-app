@@ -4,6 +4,7 @@ import { ThemeSwitcher } from 'widgets/ThemeSwitcher';
 
 import { classNames } from 'shared/lib/classNames';
 import { LanguageSwitcher } from 'widgets/LanguageSwitcher';
+import { AppButton, ThemeAppButton } from 'shared/ui/AppButton';
 import cls from './Sidebar.module.scss';
 
 interface SidebarProps {
@@ -17,13 +18,14 @@ export const Sidebar = (props: SidebarProps) => {
 
   return (
     <div className={classNames(cls.Sidebar, { [cls.collapsed]: collapsed }, [className])}>
-      <button
-        type="button"
+      <AppButton
+        type={'button'}
+        theme={ThemeAppButton.OUTLINED}
         onClick={() => setCollapsed((prev) => !prev)}
         className={classNames(cls.toggle)}
       >
         {collapsed ? '>>' : '<<'}
-      </button>
+      </AppButton>
 
       <div className={cls.switchers}>
         <ThemeSwitcher />

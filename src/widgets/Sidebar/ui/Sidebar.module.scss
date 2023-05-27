@@ -12,18 +12,6 @@
   &.collapsed {
     width: 80px;
   }
-
-  & .toggle {
-    border: none;
-    background: none;
-    outline: none;
-    color: var(--primary-color);
-    cursor: pointer;
-
-    &:hover {
-      text-decoration: underline;
-    }
-  }
 }
 
 .switchers {
