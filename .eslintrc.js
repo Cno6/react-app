@@ -36,6 +36,7 @@ module.exports = {
     'i18next/no-literal-string': ['error', { markupOnly: true, ignoreAttribute: ['to', 'data-testid'] }],
     'react/jsx-curly-brace-presence': ['warn', { props: 'never', children: 'never' }],
     'max-len': ['warn', 120, { ignoreComments: true }],
+    'react/display-name': 'off',
   },
   globals: {
     __IS_DEV__: true,
