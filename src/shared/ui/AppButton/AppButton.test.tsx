@@ -10,7 +10,7 @@ describe('AppButton', () => {
   });
 
   it('is have "text" theme', () => {
-    render(<AppButton theme={ThemeAppButton.TEXT}>Test</AppButton>);
+    render(<AppButton theme={ThemeAppButton.TEXT}>TEST</AppButton>);
     expect(screen.getByText('TEST')).toHaveClass('text');
   });
 });
