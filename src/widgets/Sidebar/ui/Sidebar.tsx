@@ -24,13 +24,13 @@ export const Sidebar = (props: SidebarProps) => {
       <AppButton
         data-testid="sidebar-toggle"
         type="button"
-        theme={ThemeAppButton.OUTLINED}
+        theme={ThemeAppButton.FILLED}
         onClick={() => setCollapsed((prev) => !prev)}
         className={classNames(cls.toggle)}
       >
         {collapsed ? '>>' : '<<'}
       </AppButton>
-
+      <div />
       <div className={cls.switchers}>
         <ThemeSwitcher />
         <LanguageSwitcher />
