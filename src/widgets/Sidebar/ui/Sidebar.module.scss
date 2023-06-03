@@ -9,18 +9,6 @@
   padding: 10px 20px;
   background-color: var(--navbar-bg);
   transition: width 0.3s ease-in;
-
-  &.collapsed {
-    width: 80px;
-
-    & .switchers {
-      flex-direction: column;
-
-      & > :not(:last-child) {
-        margin-right: 0;
-      }
-    }
-  }
 }
 
 .switchers {
@@ -28,6 +16,18 @@
 
   & > :not(:last-child) {
     margin-right: 15px;
+  }
+}
+
+.collapsed {
+  width: 80px;
+
+  & .switchers {
+    flex-direction: column;
+
+    & > :not(:last-child) {
+      margin-right: 0;
+    }
   }
 }
 
